@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body { 
+          background-color: powderblue; 
+          font-size: 30px;
+        }
+      </style>
+      <div id="score">0</div>
+      <div id="button">CLICK ME</div>
+      <script>
+        let counter = 0;
+        
+        document.getElementById('button').onclick = () => {
+          counter = counter + 1;
+          document.getElementById('score').innerText = counter;
+        };
+        
+      </script>
+</body>
+</html>
